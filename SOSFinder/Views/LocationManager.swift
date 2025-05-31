@@ -80,7 +80,7 @@ extension LocationManager: CLLocationManagerDelegate {
         self.latitude = location.coordinate.latitude
         self.longitude = location.coordinate.longitude
 
-        // Update the region to focus the map on the user's location
+        
         self.region = MKCoordinateRegion(
             center: location.coordinate,
             span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)

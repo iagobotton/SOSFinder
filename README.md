@@ -1,41 +1,59 @@
-# SOSFinder
 
-SOSfinder is a mobile application designed to help people quickly access emergency phone numbers (police, ambulance, and fire brigade) based on their current location. The app provides an intuitive and user-friendly interface that ensures users can get the help they need in critical moments.
 
-## 🚀 **Features**
-- **Automatic Location Detection**: SOSfinder identifies the user's current location using GPS technology.
-- **Emergency Numbers by Country**: The app dynamically retrieves the emergency contact numbers specific to the user's location using the [EmergencyNumberAPI](https://emergencynumberapi.com/).
-- **One-Tap Call Buttons**: Call emergency services with a single tap on the corresponding button (Police, Ambulance, or Fire Brigade).
-- **Interactive Map**: View your real-time position on a map and track location updates as you move.
-- **Customizable Map Styles**: Choose from different map styles (Standard, Satellite, or Hybrid) for a better visual experience.
+# SOSFinder – Emergency Contact App
 
-## 📱 **How It Works**
-1. **Location Detection**: Upon opening the app, it automatically detects your location.
-2. **Emergency Numbers**: The app identifies the emergency numbers specific to your location using the [EmergencyNumberAPI](https://emergencynumberapi.com/).
-3. **One-Tap Calls**: Tap the Police, Ambulance, or Fire Brigade button to call directly.
-4. **Live Map**: View your live location and navigate through the map for better context.
+## 📌 **Project Overview**
 
-## 🌐 **Why SOSfinder?**
-- **Fast Access to Help**: In emergencies, every second counts. SOSfinder provides emergency numbers instantly.
-- **Global Reach**: No matter where you are, the app updates the emergency numbers specific to the country you’re in.
-- **Simple and Intuitive**: The interface is designed for speed and simplicity, making it usable by anyone.
+**SOSFinder** is an iOS application developed to provide instant access to local emergency numbers (Police, Ambulance, Fire Brigade) based on the user's location. Designed with international travelers and expatriates in mind, the app addresses a critical problem: during an emergency, not knowing which number to dial can cost precious seconds. SOSFinder solves this by combining real-time location data with a clean, intuitive interface for fast, stress-free access to help.
+
+## 🚀 **Key Features**
+
+- **Automatic Location Detection**: Instantly detects the user’s current country using GPS.
+- **Localized Emergency Numbers**: Retrieves up-to-date emergency numbers based on location via [EmergencyNumberAPI](https://emergencynumberapi.com/).
+- **One-Tap Emergency Calling**: Initiate a call to the Police, Ambulance, or Fire Brigade with a single tap.
+- **Map Integration**: Displays the user’s real-time location using MapKit with customizable map styles (Standard, Satellite, Hybrid).
+- **Haptic Feedback**: Confirms when an emergency call is initiated.
+- **Disabled Buttons**: Clearly indicates which emergency services are unavailable in certain regions.
+- **Accessible Design**: Interface optimized for use under stress, with large tap areas and intuitive icons.
 
 ## 🛠️ **Technologies Used**
-- **SwiftUI**: For building a modern and responsive user interface.
-- **CoreLocation**: To access and track the user's location.
-- **MapKit**: To display an interactive map with location tracking.
-- **[EmergencyNumberAPI](https://emergencynumberapi.com/)**: To obtain emergency numbers for each country dynamically.
-  
-## 🚧 **Future Improvements**
-- **Offline Mode**: Access emergency numbers even when offline.
-- **Multilingual Support**: Make the app accessible in multiple languages.
-- **Customizable Alerts**: Send location-based alerts to trusted contacts.
-  
+
+- **SwiftUI**: Modern UI framework used to create responsive, adaptive layouts.
+- **UIKit**: Used via `UIApplication` for call handling and `UIImpactFeedbackGenerator` for haptic feedback.
+- **CoreLocation**: Determines the user’s geographic position to fetch relevant emergency numbers.
+- **MapKit**: Displays the user’s current location and surroundings in real-time.
+- **EmergencyNumberAPI**: External service providing country-specific emergency contacts dynamically.
+
+## 🎯 **Target Users**
+
+- International travelers and tourists  
+- Expats living in foreign countries  
+- People who often move between countries  
+- Anyone who may face emergencies in unfamiliar locations  
+
+## 🌐 **Why SOSFinder?**
+
+- **Speed**: Direct access to help with just two taps
+- **Simplicity**: Clean UI and icon-based navigation reduce confusion in emergencies
+- **Reliability**: Always provides the correct emergency number for the country you're in
+- **Scalability**: Designed with modular components to allow for future features like offline support or alerting trusted contacts
+
+## 🌱 **Future Improvements**
+
+- **Offline Mode**: Access previously fetched emergency numbers without an internet connection
+- **Multilingual Interface**: Support for multiple languages for broader accessibility
+- **SOS Alerts**: Ability to send location-based alerts to predefined contacts
+- **Voice Assistance**: Hands-free mode for added accessibility
+
 ## 🤝 **Contributions**
-Contributions, bug reports, and feature requests are welcome! Feel free to submit an issue or a pull request. Your feedback helps make SOSfinder better for everyone.
+
+Contributions, bug reports, and feature suggestions are welcome. Feel free to open an issue or submit a pull request — every improvement can help save lives.
 
 ## 📄 **License**
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ---
-With SOSfinder, help is always just one tap away. Stay safe, no matter where you are! 🌍
+
+🛟 **SOSFinder** — Because in an emergency, knowing who to call should never be a barrier.  
+Your location. Your safety. One tap away.
